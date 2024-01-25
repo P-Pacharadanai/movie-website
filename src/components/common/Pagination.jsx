@@ -17,7 +17,7 @@ const Pagination = (props) => {
             <PaginationItem
                 pageNumber="Prev"
                 page={page}
-                nextPage={() => nextPage(page.current - 1)}
+                nextPage={() => page.current !== 1 && nextPage(page.current - 1)}
             />
             {pages.map((pageNumber) => {
                 return (
@@ -32,7 +32,7 @@ const Pagination = (props) => {
             <PaginationItem
                 pageNumber="Next"
                 page={page}
-                nextPage={() => nextPage(page.current + 1)}
+                nextPage={() => page.current !== page.total && nextPage(page.current + 1)}
             />
             <PaginationItem
                 pageNumber="Last"

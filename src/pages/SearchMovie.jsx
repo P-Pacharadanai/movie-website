@@ -4,7 +4,7 @@ import MovieList from "../components/pages/SearchMovie/MovieList";
 
 function SearchMovie() {
     return (
-        <div className="min-h-screen bg-default text-white ">
+        <div className="min-h-screen bg-default text-white flex flex-col ">
             <Navbar />
             <MovieList />
             <Footer />

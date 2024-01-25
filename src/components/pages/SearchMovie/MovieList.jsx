@@ -34,7 +34,7 @@ function MovieList() {
     }, [keyword, typeSearch]);
 
     return (
-        <div className="max-w-[1140px] mx-auto mt-20">
+        <div className="max-w-[1140px] mx-auto mt-20 flex-1">
             {movieList[0] ? (
                 <div className="flex justify-between">
                     <h3 className="text-3xl">Search results of '{keyword}'</h3>
